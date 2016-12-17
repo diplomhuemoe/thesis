@@ -1,0 +1,74 @@
+\documentclass[]{itmo-student-thesis}
+
+\usepackage{icomma}
+
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{shadows,arrows.meta}
+\usepackage{expdlist}
+\usepackage{cmap}
+\usepackage{array}
+\usepackage{xspace}
+\usepackage{wrapfig}
+\usepackage{srcltx}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{placeins}
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{easytable}
+\usepackage{fancybox}
+\usepackage{bussproofs}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\usepackage{proof}
+
+\newenvironment{calculus}
+{\begin{center}\begin{Sbox}\begin{minipage}[b]{0.98\textwidth}}
+{\end{minipage}\end{Sbox}\fbox{\TheSbox}\end{center}}
+
+\newcommand{\CR}{\textbf{CR}\xspace}
+\newcommand{\upr}[1]{\mathbf{u}(#1)}
+\newcommand{\con}[1]{\mathbf{c}(#1)}
+\newcommand{\cdcl}{\mathbf{cl}}
+
+\newcommand{\dual}[1]{\overline{#1}}   %  the dual of literal #1
+
+\newcommand{\dls}[2]{\begin{tiny}\overset{#1}{#2}\end{tiny}}
+
+%This command creates a box marked ``To Do'' around text.
+%To use type \todo{  insert text here  }.
+
+\newcommand{\todo}[1]{\vspace{5 mm}\par \noindent
+\marginpar{ToDo}
+\framebox{\begin{minipage}[c]{0.95 \textwidth}
+    \tt #1 \end{minipage}}\vspace{5 mm}\par}
+
+\newcommand{\scavenger}{{\sf Scavenger}\xspace}
+
+
+\addbibresource{bachelor-thesis.bib}
+
+\begin{document}
+
+\studygroup{M3439}
+\title{Извлечение отношений между словами на основе их векторного представления}
+\author{Лоскутов Игнат Анатольевич}{Лоскутов И.А.}
+\supervisor{Фильченков Андрей Александрович}{Фильченков А.А.}{доц. каф. КТ, канд. техн. наук}{}
+\publishyear{2017}
+\startdate{01}{сентября}{2016}
+\finishdate{31}{мая}{2017}
+\defencedate{15}{июня}{2017}
+
+\maketitle{Бакалавр}
+
+\tableofcontents
+
+\input{chapters/intro.tex}
+
+\printmainbibliography
+
+\end{document}
